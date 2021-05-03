@@ -1,0 +1,129 @@
+import java.util.Scanner;
+abstract class HDFC
+{
+float currentAccount;
+float savingAccount;
+float loanAccount;
+float viewAccount;
+void typeOfAccont()
+{
+System.out.println("DIFFENTS TYPES OF ACCOUNTS");
+System.out.println("CURRENT ACCOUNT ");
+System.out.println("SAVING ACCOUNT");
+System.out.println("LOANACCOUNT");
+System.out.println("VIEW ACCOUNTS")
+}
+}
+class CurrentAccount extends HDFC
+{
+int currentacc;
+void CurrentAcccountNo()
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("enter account number");
+int currentacc=scan.nextInt();
+}
+void creditCard()
+{
+System.out.println("current account balance"+depositamount);
+}
+void Display()
+{
+System.out.println("balance in currentaccount"+bal);
+}
+}
+
+
+class SavingAccount extends HDFC
+{
+int Depositmoney;
+int withdrawmoney;
+int checkbalance;
+void Deposit()
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("enter account number");
+int depo=scan.nextInt();
+}
+void WithdrawMoney()
+{
+System.out.println("after withdraw money"+(depositamount-bankbalance));
+}
+void CheckBalance()
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("enter account number");
+int check=scan.nextInt();
+System.out.println("balance in savingAccount is"+check);
+}
+}
+
+class loanAccount extends HDFC
+{
+String createLoan;
+int loanvalidity;
+String amount;
+String ViewList;
+
+void createLoan()
+
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("enter account number");
+int loan=scan.nextInt();
+System.out.println("balance in loanAccount is"+loan);
+
+}
+void Validity()
+{
+if(validity==5)
+{
+System.out.println("COLLECT YOUR LOAN AMOUNT");
+}
+else if(validity<5)
+{
+System.out.println("wait for maturity");
+}
+else
+{
+System.out.println("DEOS NOT MACTH YOUR LOAN VALIDITY");
+}
+
+void Amount()
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("enter account number");
+int amt=scan.nextInt();
+System.out.println("balance in loanAccount is"+bankBalance);
+}
+}
+
+}
+class demo
+{
+public static void main(String args[])
+{
+Currentaccount ca=new Currentaccount();
+Saving sa=new Savingaccount();
+loanaccount ca=new loanaccount();
+ca.CurrentAcccountNo();
+ca.creditCard();
+ca.Display();
+
+sa.Deposit();
+sa.WithdrawMoney();
+sa.CheckBalance();
+
+
+la.createLoan();
+la.validity();
+la.amount();
+
+}
+}
+
+
+
+
+
+
